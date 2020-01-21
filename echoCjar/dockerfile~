@@ -1,0 +1,4 @@
+FROM eclipse/ubuntu_jdk8
+ADD echoClient.jar /home/echoClient.jar
+ENV JAVA_OPTS=""
+CMD ["java","-jar","/home/echoClient.jar"]
